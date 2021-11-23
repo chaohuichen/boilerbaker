@@ -19,11 +19,8 @@ class Routes extends Component {
 
     return (
       <Switch>
-        <Switch>
-          {/* Routes placed here are only available after logging in */}
-          <Route path="/game" component={GameScoreboard} />
-          <Route exact path="/register" component={Register} />
-        </Switch>
+        {/* Routes placed here are only available after logging in */}
+        <Route path="/register" component={Register} />
       </Switch>
     )
   }
